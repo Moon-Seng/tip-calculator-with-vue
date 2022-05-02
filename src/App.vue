@@ -7,7 +7,7 @@
     </div>
 
     <div class="main-card">
-        <div class="col-12 col-md-6 left-content">
+        <div class="col-12 col-lg-6 left-content">
             <div class="bill">
                 <label class="form-label" for="bill">Bill</label>
                 <input class="form-control" type="text" name="" id="bill" placeholder="0.00">
@@ -35,7 +35,7 @@
 
         
 
-        <div class="col-12 col-md-6 right-content">
+        <div class="col-12 col-lg-6 right-content">
 
             <div class="right-card">
                 <div class="result">
@@ -129,7 +129,7 @@ label{
 }
 
 .logo{
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
 }
 
 .main-card{
@@ -137,7 +137,8 @@ label{
     overflow: hidden;
     background-color: white;
     display: flex;
-    min-width: 1065px;
+    flex-wrap: wrap;
+    width: 1065px;
 }
 
 .left-content {
@@ -268,6 +269,8 @@ label{
 }
 
 .reset button{
+    text-transform: uppercase;
+    font-weight: bold;
     width: 100%;
     padding: .5rem 0;
     background-color: hsl(172, 67%, 45%);
@@ -278,5 +281,62 @@ label{
     background-color: hsl(185, 79%, 71%);
 
 }
+
+@media screen and (max-width : 1070px) {
+
+    #app{
+        margin: 4rem auto;
+    }
+
+    .container{
+        height: fit-content;
+        padding: 5rem auto;
+    }
+
+    .main-card{
+        width: 700px;
+        height: fit-content ;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .main-card{
+        width: 1300px;
+    }
+
+    .logo{
+        margin-bottom: 6rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    *{
+        font-size: 16px;
+    }
+
+    .main-card{
+        width: 98%;
+    }
+
+    .left-content{
+        padding: 1rem;
+    }
+
+    .base-button-tip , .tips input{
+        height: 50px;
+    }
+
+    .numberOfPeople span{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width : 1300px) {
+    .main-card{
+        width: 99%;
+    }
+}
+
 
 </style>
